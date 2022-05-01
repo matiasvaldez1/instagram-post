@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+  }
+  button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  
+  html {
+    font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+    margin: 0;
+    background-color: rgb(243, 242, 242);
+  }
+  /* Container */
+  .position{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container{
+    background-color: rgb(255, 255, 255);
+    width: 35%;
+    height: 95%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px black;
+    user-select: none;
+  }
+  /* User info */
+  .user-info{
+    display: flex;
+    margin-top: 5px;
+  }
+  .user-name-city{
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+    line-height: 0;
+  }
+  #name{
+    font-weight: 700;
+  }
+  .profile-image{
+    border-radius: 100px;
+    margin: 0 1em;
+  }
+  /* Slider */
+  .swiper {
+    width: 100%;
+    height: 400px;
+    margin: 10px 0;
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+  }
+  .buttons > img,
+  .buttons > div > img{
+    height: 28px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .buttons > div > img{
+    margin: 0 5px;
+  }
+  .buttons > div > img:active{
+    transform: scale(1.1);
+  }
+  .buttons > img:active{
+    transform: scale(1.1);
+  }
+  .buttons > div{
+    margin-left: 12px;
+  }
+
+  /* Comment */
+
+  .comment-wrapper{
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+  }
+
+  .comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .bg-comment{
+    display: flex;  
+    justify-content: center;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+  }
+  .bg-comment > input{
+    background-color: #eaeaea;
+    border: none;
+    padding: 12px;
+    height: 40px;
+    width: 80%;
+  }
+  .bg-comment > button{
+    color: #3D8AFF;
+    background-color: #eaeaea;
+    padding: 10px;
+  }
+  #p-comments{
+    margin: 0;
+  }

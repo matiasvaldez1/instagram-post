@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Instagram Post</title>
+  </head>
+  <body class="bg-body">
+    <main class="position">
+      <div class="container">
+        <div class="user-info">
+          <img
+            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="Profile picture"
+            class="profile-image"
+            height="60"
+            width="60"
+          />
+          <div class="user-name-city">
+            <p id="name">Erik Dunlop</p>
+            <p>San Francisco, California</p>
+          </div>
+        </div>
+        <div class="swiper">
+          <div id="slides" class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="buttons">
+          <div>
+            <img src="./assets/me-gusta.png" />
+            <img src="./assets/burbuja-de-chat.png" />
+            <img src="./assets/instagram-directo.png" />
+          </div>
+          <img src="./assets/marcos.png" />
+        </div>
+        <p id="p-comments">Comments</p>
+            <div class="comment-wrapper">
+                <div class="comment">
+                    <div class="bg-comment">
+                        <input class="input-comment" />
+                        <button class="button-comment">Post</button>
+                    </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
