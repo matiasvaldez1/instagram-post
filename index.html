@@ -42,18 +42,20 @@
         </div>
         <div class="buttons">
           <div>
-            <img src="./assets/me-gusta.png" />
+            <img id="like" class="like-class" src="./assets/me-gusta.png" />
             <img src="./assets/burbuja-de-chat.png" />
             <img src="./assets/instagram-directo.png" />
           </div>
           <img src="./assets/marcos.png" />
         </div>
-        <p id="p-comments">Comments</p>
+        <div id="comments">
+          <p id="p-comments">Comments</p>
+        </div>
             <div class="comment-wrapper">
                 <div class="comment">
                     <div class="bg-comment">
-                        <input class="input-comment" />
-                        <button class="button-comment">Post</button>
+                        <input id="input-comment" class="input-comment" />
+                        <button onclick="handleInput()" class="button-comment">Post</button>
                     </div>
             </div>
         </div>

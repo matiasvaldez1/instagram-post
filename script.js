@@ -1,5 +1,7 @@
-
 const slides = document.getElementById('slides');
+const like = document.getElementById('like')
+const commentWrapper = document.getElementById('comments')
+const comments = []
 
 function createNode(element) {
     return document.createElement(element);
@@ -8,6 +10,8 @@ function createNode(element) {
 function append(parent, el) {
     return parent.appendChild(el);
 }
+
+/* Fetching images and using them */
 
 (function fetchImages(){
     const res = fetch("https://picsum.photos/v2/list?page=2&limit=10")
@@ -20,10 +24,8 @@ function append(parent, el) {
             append(slides,img)
         })
     })
-}());
-
-
-const swiper = new Swiper('.swiper', {
+    .then(()=>{
+        const swiper = new Swiper('.swiper', {
         loop: true,
         pagination: {
             el: '.swiper-pagination',
@@ -33,6 +35,35 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
         },
     });
+    })
+}());
+
+/* Toggle like */
+
+like.addEventListener('click',() =>{
+    if(like.className === "like-class"){
+        like.className = "like-red"
+        return like.src = "./assets/me-gusta-rojo.png"
+    }
+    like.className = "like-class"
+    return like.src = "./assets/me-gusta.png" 
+})
+
+/* Make a comment */
+
+
+
+function handleInput(){
+    const value = document.getElementById("input-comment").value
+    if(value !== ""){
+    const p = createNode("p")
+    p.innerHTML = value
+    comments.push(p)
+    append(commentWrapper,...comments)
+    }else{
+        return value
+    }
+}
 
 
 
