@@ -43,21 +43,23 @@
         <div class="buttons">
           <div>
             <img id="like" class="like-class" src="./assets/me-gusta.png" />
-            <img src="./assets/burbuja-de-chat.png" />
+            <img src="./assets/burbuja-de-chat.png" onclick="handleFocus()" />
             <img src="./assets/instagram-directo.png" />
           </div>
           <img src="./assets/marcos.png" />
         </div>
         <div id="comments">
-          <p id="p-comments">Comments</p>
+          <p class="p-comments">Comments</p>
         </div>
-            <div class="comment-wrapper">
-                <div class="comment">
-                    <div class="bg-comment">
-                        <input id="input-comment" class="input-comment" />
-                        <button onclick="handleInput()" class="button-comment">Post</button>
-                    </div>
+        <div class="comment-wrapper">
+          <div class="comment">
+            <div class="bg-comment">
+              <input id="input-comment" class="input-comment" />
+              <button onclick="handleInput()" class="button-comment">
+                Post
+              </button>
             </div>
+          </div>
         </div>
       </div>
     </main>

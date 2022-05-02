@@ -51,18 +51,22 @@ like.addEventListener('click',() =>{
 
 /* Make a comment */
 
-
-
 function handleInput(){
     const value = document.getElementById("input-comment").value
     if(value !== ""){
     const p = createNode("p")
-    p.innerHTML = value
+    p.classList.add("p-comments")
+    p.innerHTML = `Erik dunlop: ${value}`
     comments.push(p)
     append(commentWrapper,...comments)
     }else{
         return value
     }
+}
+
+/* Handle focus */
+function handleFocus(){
+document.getElementById('input-comment').focus();
 }
 
 
